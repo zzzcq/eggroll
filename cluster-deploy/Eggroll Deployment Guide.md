@@ -51,10 +51,10 @@ Go into the project directory and do dependency packaging:
 ```bash
 cd Eggroll
 mvn clean package -DskipTests
-cd cluster-deploy/scripts
-sh auto-packaging.sh
 wget https://webank-ai-1251170195.cos.ap-guangzhou.myqcloud.com/third_party_eggrollv1.tar.gz
 tar -xzvf third_party_eggrollv1.tar.gz -C storage/storage-service-cxx
+cd cluster-deploy/scripts
+sh auto-packaging.sh
 ```
 
 ### 2.3. Modify Configuration File
@@ -181,9 +181,9 @@ mysqldir=$mysql_install_path		(mysql install absolute path)
 javadir=$jdk_install_path			(java_home absolute path)
 venvdir=$python_virtualenv_path		 (python_virtualenv install absolute path)
 
-partylist=($party_id)				(the party.id of the single-node,eg 10000)
+partyid=$party_id				(the party.id of the single-node,eg 10000)
 ip=$localhost_ip					(the ip of single-node,eg 127.0.0.1)
-exchange=$change_ip					(the ip of exchange module,eg 127.0.0.1)
+exchange=$exchange_ip					(the ip of exchange module,eg 127.0.0.1)
 jdbc=($mysql_ip $db_name $db_user $db_password)	(the configuration of mysql)
 
 =========(default port of each module,if you need use other ports, configure them)========

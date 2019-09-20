@@ -6,9 +6,9 @@ mysqldir=$mysql_install_dir
 javadir=$jdk_install_path
 venvdir=$python_virtualenv_path
 
-partylist=($party_id)
+partyid=$party_id
 ip=$localhost_ip
-exchange=$change_ip
+exchange=$exchange_ip
 jdbc=($mysql_ip $db_name $db_user $db_password)
 
 clustercomm_port=9394
