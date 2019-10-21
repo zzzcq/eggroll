@@ -14,6 +14,7 @@ metaservice_$party_id=$metaservice_ip
 proxy_$party_id=$proxy_ip
 roll_$party_id=$roll_ip
 egglist_$party_id=($egg1_ip $egg2_ip $egg3_ip)
+jdbc_$party_id=($mysql_ip $db_name $db_user $db_password)
 
 clustercomm_port=9394
 metaservice_port=8590
